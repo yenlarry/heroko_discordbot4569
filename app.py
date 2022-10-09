@@ -42,6 +42,7 @@ async def on_message(message):
   global x
   global y
   global reply
+  global b
 
     # 排除機器人本身發出的訊息，避免機器人自問自答的無限迴圈
   if message.author == client.user:
@@ -50,7 +51,8 @@ async def on_message(message):
   if message.content.startswith('dc') :
     
     if message.content.startswith('dca') :
-      await message.channel.send(reply)
+      for b in reply:
+        await message.channel.send([b,reply[b]])
     elif message.content.startswith('dcf') :
       tmp = message.content.split(" ",2)
       y=tmp[1]
