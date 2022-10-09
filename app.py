@@ -70,6 +70,7 @@ async def on_message(message):
     return
   else:
     a(message.content)
+  print(reply)
 
     
          
