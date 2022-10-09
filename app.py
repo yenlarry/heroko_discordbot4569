@@ -51,7 +51,7 @@ async def on_message(message):
     
     if message.content.startswith('dca') :
       for a in reply:
-        await message.channel.send(a,reply[a],/n)
+        await message.channel.send(a,reply[a],'/n')
     elif message.content.startswith('dcf') :
       tmp = message.content.split(" ",2)
       y=tmp[1]
