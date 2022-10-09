@@ -13,6 +13,7 @@ def a(message):
 
 import discord
 import os
+TOKEN = os.environ['TOKEN']
 
 
 
