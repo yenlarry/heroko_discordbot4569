@@ -49,14 +49,14 @@ async def on_message(message):
   
   if message.content.startswith('dc') :
     
-    if message.content.startswith('dcall') :
+    if message.content.startswith('dca') :
       await message.channel.send(reply)
-    elif message.content.startswith('dcfix') :
+    elif message.content.startswith('dcf') :
       tmp = message.content.split(" ",2)
       y=tmp[1]
       reply[y]='?'
       x=2
-    elif message.content.startswith('dcreset'):
+    elif message.content.startswith('dcr'):
       reply={}
       reply ={'dc':'幹嘛'}
       
