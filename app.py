@@ -12,6 +12,7 @@ def a(message):
     x=1
 
 # 導入 Discord.py 套件
+import os
 import discord
 intents = discord.Intents.default()
 intents.typing = False
