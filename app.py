@@ -55,7 +55,11 @@ async def on_message(message):
       y=tmp[1]
       reply[y]='?'
       x=2
-    else:  
+    elif message.content.startswith('dcreset'):
+      reply={}
+      reply ={'dc':'幹嘛'}
+      
+    else :  
       tmp = message.content.split(" ",2)
       print(tmp)
       if tmp[1] in reply:
