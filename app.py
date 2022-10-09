@@ -16,6 +16,7 @@ import discord
 intents = discord.Intents.default()
 intents.typing = False
 intents.presences = False
+TOKEN = os.environ['TOKEN']
 
 # 取得 Discord client 物件才能操作
 client = discord.Client()
@@ -67,4 +68,4 @@ async def on_message(message):
   print(reply)
     
          
-client.run('MTAyODI0ODY4MTcwODc4NTc1OA.GbEMne.8jPTfL2gCF8CyigOAc6Hsb-4Jv05_K1zUk575k') #TOKEN在剛剛Discord Developer那邊「BOT」頁面裡面
+client.run(TOKEN) #TOKEN在剛剛Discord Developer那邊「BOT」頁面裡面
