@@ -63,11 +63,10 @@ async def on_message(message):
       else:
         await message.channel.send('?')
   elif message.content in reply and reply[message.content]!='?':
-    await message.channel.send('已設定過')
+    return
   else:
-    print(y)
     a(message.content)
-  print(reply)
+
     
          
 client.run(TOKEN) #TOKEN在剛剛Discord Developer那邊「BOT」頁面裡面
