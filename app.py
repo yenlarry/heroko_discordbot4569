@@ -41,6 +41,7 @@ async def on_ready():
 async def on_message(message):
   global x
   global y
+  global reply
 
     # 排除機器人本身發出的訊息，避免機器人自問自答的無限迴圈
   if message.author == client.user:
