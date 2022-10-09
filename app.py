@@ -17,7 +17,7 @@ intents = discord.Intents.default()
 intents.typing = False
 intents.presences = False
 TOKEN = os.environ['TOKEN']
-client = discord.Client(intents=discord.Intents.default())
+
 
 # 取得 Discord client 物件才能操作
 client = discord.Client()
