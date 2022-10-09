@@ -12,9 +12,6 @@ def a(message):
     x=1
 import os
 import discord
-intents = discord.Intents.default()
-intents.typing = False
-intents.presences = False
 TOKEN = os.environ['TOKEN']
 
 
