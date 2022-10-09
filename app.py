@@ -10,11 +10,7 @@ def a(message):
   else:
     reply[y] = message
     x=1
-intents = discord.Intents.default() # or .all() if you ticked all, that is easier
-intents.members = True # If you ticked the SERVER MEMBERS INTENT
-
-bot = commands.Bot(command_prefix=".", intents=intents) # "Import" the intents
-# 導入 Discord.py 套件
+client = discord.Client(intents=discord.Intents.default())
 import os
 import discord
 intents = discord.Intents.default()
