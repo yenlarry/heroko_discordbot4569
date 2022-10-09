@@ -10,7 +10,6 @@ def a(message):
   else:
     reply[y] = message
     x=1
-import intents
 import os
 import discord
 intents = discord.Intents.default()
