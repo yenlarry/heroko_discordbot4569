@@ -62,7 +62,6 @@ async def on_message(message):
       
     else :  
       tmp = message.content.split(" ",2)
-      print(tmp)
       if tmp[1] in reply:
         await message.channel.send(reply[tmp[1]])
       else:
@@ -71,7 +70,7 @@ async def on_message(message):
     return
   else:
     a(message.content)
-  print(reply)
+
 
     
          
