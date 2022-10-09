@@ -17,10 +17,7 @@ intents = discord.Intents.default()
 intents.typing = False
 intents.presences = False
 TOKEN = os.environ['TOKEN']
-intents = discord.Intents.default() # or .all() if you ticked all, that is easier
-intents.members = True # If you ticked the SERVER MEMBERS INTENT
-
-bot = commands.Bot(command_prefix=".", intents=intents) # "Import" the intents
+client = discord.Client(intents=discord.Intents.default())
 
 # 取得 Discord client 物件才能操作
 client = discord.Client()
