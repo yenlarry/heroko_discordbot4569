@@ -10,9 +10,13 @@ def a(message):
   else:
     reply[y] = message
     x=1
-import os
+from distutils.command.clean import clean
+from email import message, message_from_binary_file
+from pyexpat.errors import messages
+from telnetlib import STATUS
 import discord
-TOKEN = os.environ['TOKEN']
+import os
+
 
 
 # 取得 Discord client 物件才能操作
